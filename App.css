@@ -1,0 +1,221 @@
+/* Global Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #ffffff; /* Dark theme */
+  color: #000000; /* White text */
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.app {  
+  display: flex;
+  height: 100vh;
+  position: relative;
+}
+
+/* Sidebar Styles */
+.sidebar {
+  width: 300px;
+  background-color: #1e1e1e; /* Dark sidebar */
+  padding: 20px;
+  border-right: 1px solid #333;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.sidebar-title {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 30px;
+  text-align: center;
+  color: #ffffff;
+}
+
+.logo-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.logo {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #333;
+}
+
+.modes {
+  margin-bottom: 30px;
+}
+
+.mode-header {
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #ffffff;
+}
+
+.modes ul {
+  list-style: none;
+}
+
+.modes li {
+  padding: 10px 0;
+  cursor: pointer;
+  font-size: 14px;
+  color: #ffffff;
+}
+
+.modes li.active {
+  font-weight: bold;
+  color: #007bff;
+}
+
+.additional-settings p {
+  margin: 15px 0;
+  cursor: pointer;
+  font-size: 14px;
+  color: #aaaaaa;
+}
+
+.switch-btn {
+  padding: 10px;
+  background-color: #000;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+/* Main Content Styles */
+.main-content {
+  flex: 1;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.header h1 {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.header p {
+  color: #aaaaaa;
+  font-size: 16px;
+  margin-top: 5px;
+}
+
+.actions {
+  margin-bottom: 20px;
+}
+
+.action-btn {
+  padding: 10px 15px;
+  margin-right: 10px;
+  border: 1px solid #444;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: #333;
+  color: #ffffff;
+  font-size: 14px;
+}
+
+/* Prompt Bar */
+.prompt-bar {
+  position: absolute;
+  bottom: 20px;
+  left: 320px;
+  right: 20px;
+  display: flex;
+  background-color: #1e1e1e;
+  border: 1px solid #fffefe;
+  border-radius: 5px;
+  padding: 10px;
+  align-items: center;
+}
+
+.prompt-bar input {
+  flex: 1;
+  padding: 10px;
+  font-size: 14px;
+  background-color: #f8f8f8;
+  border: none;
+  border-radius: 5px;
+  color: #ffffff;
+  margin-right: 10px;
+  outline: none;
+}
+
+.prompt-bar button {
+  padding: 10px;
+  margin-left: 5px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: #000000;
+  color: #ffffff;
+}
+
+.prompt-bar button:hover {
+  background-color: #0056b3;
+}
+
+.prompt-bar .icon-btn {
+  background-color: transparent;
+  color: #ffffff;
+  font-size: 20px;
+  cursor: pointer;
+  border: none;
+  margin-left: 5px;
+}
+
+.icon-btn:hover {
+  color: #007bff;
+}
+
+/* Login Profile */
+.navbar {
+  position: absolute;
+  top: 0;
+  right: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.navbar .profile-btn {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.navbar img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 10px;
+  border: 2px solid #e40b0b;
+}
+
+.navbar p {
+  color: #000000;
+  font-size: 14px;
+}
